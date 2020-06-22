@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/mf/GitHub/Pyzo_python_portable/pyzo.app/Contents/envMiniconda
+exec_prefix=/Users/mf/GitHub/Pyzo_python_portable/pyzo.app/Contents/envMiniconda
+libdir=/Users/mf/GitHub/Pyzo_python_portable/pyzo.app/Contents/envMiniconda/lib
+includedir=/Users/mf/GitHub/Pyzo_python_portable/pyzo.app/Contents/envMiniconda/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -Qunused-arguments -pthread -lpthread
